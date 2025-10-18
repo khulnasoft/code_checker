@@ -1,0 +1,26 @@
+# Configuration settings for code_checker
+
+scanner:
+  sast:
+    enabled: true
+    rules:
+      - example_rule
+  dep_scan:
+    enabled: true
+    dependency_file: requirements.txt
+  rule_engine:
+    enabled: true
+    rules:
+      - example_rule
+
+cli:
+  enabled: true
+
+api:
+  enabled: true
+  host: 0.0.0.0
+  port: 8000
+
+logging:
+  level: INFO
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
